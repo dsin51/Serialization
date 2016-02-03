@@ -9,11 +9,11 @@ public class Application {
 		Book b2 = new Book();
 		
 		BookSerializer bookSerializer = new BookSerializer();
-//		bookSerializer.serialize(b);
-//		
-//		b2 = (Book) bookSerializer.deSerialize();
-//		System.out.println(b2.toString());
-//		
+		bookSerializer.serialize(b);
+		
+		b2 = (Book) bookSerializer.deSerialize();
+		System.out.println(b2.toString());
+		
 		String message = bookSerializer.serialize(b);
 				
 				if(message!=null)

@@ -41,7 +41,7 @@ public class BookSerializer
 		Object obj = null;
 		try(ObjectInputStream oin = new ObjectInputStream(new FileInputStream(new File("Book.ser"))))
 		{
-			obj = oin.readObject();
+			obj = oin.readObject();   // Storing the values from Book.ser into obj
 
 		}catch(Exception e) {System.out.println(e.getMessage());}
 		
